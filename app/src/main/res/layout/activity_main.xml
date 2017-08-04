@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:text="搭配商品(2)"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image1"/>
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_icon"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="秋装新款 清新撞色条纹宽松套头长袖镂空套头百搭针织衫罩衫上衣"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_desc"
+                        android:layout_below="@id/tv_desc"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#4d4d4d"
+                        android:textSize="18sp"
+                        android:text="¥49.70"/>
+
+                    <TextView
+                        android:id="@+id/tv_originalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_desc"
+                        android:layout_below="@id/tv_price"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#999999"
+                        android:textSize="16sp"
+                        android:text="¥71.01"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_icon2"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image2"/>
+
+                    <TextView
+                        android:id="@+id/tv_desc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_icon2"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="夏季新款 学院风百搭纯色显廋百褶裙A字裙半身裙裙子（有内衬）"/>
+
+                    <TextView
+                        android:id="@+id/tv_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_desc2"
+                        android:layout_below="@id/tv_desc2"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#4d4d4d"
+                        android:textSize="18sp"
+                        android:text="¥45.57"/>
+
+                    <TextView
+                        android:id="@+id/tv_originalPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_desc2"
+                        android:layout_below="@id/tv_price2"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#999999"
+                        android:textSize="16sp"
+                        android:text="¥78.58"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
